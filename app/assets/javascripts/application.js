@@ -11,6 +11,18 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-1.12.4.min.js
 //= require jquery_ujs
+//= require jquery-migrate-1.4.1.min.js
+//= require plugins.min.js
+//= require modernizr-3.2.0.base.js
+
 //= require turbolinks
-//= require_tree .
+//= require functions
+
+//= require jquery.themepunch.tools.min.js
+//= require jquery.themepunch.revolution.min.js
+//= require_tree ./extensions
+
+
+
