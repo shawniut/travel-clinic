@@ -1,0 +1,206 @@
+<!-- Page Title -->
+
+<div class="content_section page_title default">
+    <div class="content clearfix">
+        <h1>Book Appointment</h1>
+    </div>
+</div>
+<!-- End Page Title -->
+
+<div class="content_section">
+    <div class="hm_main_content full_content clearfix">
+        <div class="entry-content">
+            
+            <!-- Section -->
+            <div class="it_section content_section hide_text_shadow">
+                <div class="hm_no_overlay column_spacer2">
+                    <span class="bg_overlay_con"></span>
+                    <div class="section_content container">
+                        
+                        <!-- Row -->
+                        <div class="rows_container clearfix">
+                            <div class="columns_con columns_normall clearfix">
+                                
+                                                                    <!-- Column -->
+                                <div class="hm_columns show_xs show_sm show_md show_lg col-md-6 f_left">
+                                    <div class="hm_column_out">
+                                        <div class="hm_column_con clearfix col_padd1 column_spacer2">
+
+                                            <!-- Form -->
+                                            <form method="post" name = 'appointment' class="ideal-form" enctype="multipart/form-data" novalidate action='/appointments'>
+                                            <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+                                                <div class="hm_label_block">
+                                                    <div class="form_row clearfix">
+                                                        <label for="your-name3"><span class="hm_field_name">Your Name</span><span class="hm_requires_star">*</span></label>
+                                                        <span class="ideal-form-control-wrap your-name3">
+                                                        <input type="text" name="name" value="" size="40" class="ideal-form-control ideal-cf-required" id="name" aria-required="true" aria-invalid="false" />
+                                                        </span>
+                                                    </div>
+                                                    
+                                                    <div class="form_row clearfix">
+                                                        <label for="your-email3"><span class="hm_field_name">Your Phone</span><span class="hm_requires_star">*</span></label>
+                                                        <span class="ideal-form-control-wrap your-email3">
+                                                        <input type="text" name="phone" value="" size="40" class="ideal-form-control ideal-cf-required ideal-cf-validates-as-email" id="phone" aria-required="true" aria-invalid="false" />
+                                                        </span>
+                                                    </div>
+                                                    
+                                                    <div class="form_row clearfix">
+                                                        <label for="your-email3"><span class="hm_field_name">Your Email</span><span class="hm_requires_star">*</span></label>
+                                                        <span class="ideal-form-control-wrap your-email3">
+                                                        <input type="email" name="email" value="" size="40" class="ideal-form-control ideal-cf-required ideal-cf-validates-as-email" id="email" aria-required="true" aria-invalid="false" />
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="form_row clearfix">
+                                                        <label for="job-title">
+                                                            <span class="hm_field_name">Clinic Location</span><span class="hm_requires_star">*</span>
+                                                        </label>
+                                                        <label class="orderby_label">
+                                                            <span class="ideal-form-control-wrap job-title">
+                                                                <select name="location" class="ideal-form-control ideal-cf-required" id="location" aria-required="true" aria-invalid="false">
+                                                                    <option value="">Select Location...</option>
+                                                                    <option value="Douglas Glen">Douglas Glen</option>
+                                                                    <option value="Cougar Ridge">Cougar Ridge</option>
+                                                                    <option value="New Brighton">New Brighton</option>
+                                                                    <option value="Walden">Walden</option>
+                                                                    <option value="Vista Travel Clinic">Vista Travel Clinic</option>
+                                                                </select>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    
+                                                    <div class="form_row clearfix">
+                                                        <label for="your-address3"><span class="hm_field_name">Destination(s)</span></label>
+                                                        <span class="ideal-form-control-wrap your-address3">
+                                                        <input type="text" name="destination" value="" size="40" class="ideal-form-control" id="destination" aria-invalid="false" />
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="form_row clearfix">
+                                                        <label for="your-name3"><span class="hm_field_name">Health card number</span><span class="hm_requires_star">*</span></label>
+                                                        <span class="ideal-form-control-wrap your-name3">
+                                                        <input type="text" name="health_card_number" value="" size="40" class="ideal-form-control ideal-cf-required" id="health_card_number" aria-required="true" aria-invalid="false" />
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="form_row clearfix">
+                                                        <label for="your-name3"><span class="hm_field_name">If more than one person please provide name and health card number for everyone</span></label>
+                                                        <span class="ideal-form-control-wrap your-name3">
+                                                        <input type="text" name="additional_health_card_number" value="" size="40" class="ideal-form-control ideal-cf-required" id="additional_health_card_number" aria-required="true" aria-invalid="false" />
+                                                        </span>
+                                                    </div>
+
+
+                                                    <div class="form_row clearfix">
+                                                        <label for="date_of_birth"><span class="hm_field_name">Travel Date</span></label>
+                                                        <span class="ideal-form-control-wrap date_of_birth">
+                                                        <input type="text" name="travel_date" value="" class="ideal-form-control ideal-cf-date ideal-cf-required ideal-cf-validates-as-date" id="travel_date" aria-required="true" aria-invalid="false" placeholder="" />
+                                                        </span>
+                                                    </div>
+                                                    
+                                                    <div class="form_row clearfix">
+                                                        <label for="date_of_birth"><span class="hm_field_name">Preferable appointment date and time</span><span class="hm_requires_star">*</span></label>
+                                                        
+                                                        <span class="ideal-form-control-wrap date_of_birth">
+                                                        <input type="text" name="ap_datetime" value="" class="ideal-form-control ideal-cf-date ideal-cf-required ideal-cf-validates-as-date" id="ap_datetime" aria-required="true" aria-invalid="false" placeholder="" />
+                                                        </span>
+                                                    </div>
+                                                    
+                                                                                                            
+                                                    
+                                                    <div class="form_row clearfix">
+                                                        <label for="your-message3">
+                                                            <span class="hm_field_name">Your Message</span>
+                                                        </label>
+                                                        <span class="ideal-form-control-wrap your-message3">
+                                                            <textarea name="message" cols="40" rows="10" class="ideal-cf-required" id="message" aria-required="true" aria-invalid="false"></textarea>
+                                                        </span>
+                                                    </div>
+                                                    
+                                                    
+                                                    
+                                                    <div class="clearfix">
+                                                        <button value="submit" class="send_button2 full_button" type="submit"><i class="ico-check3"></i><span>Submit Appointment Request</span></button>
+                                                    </div>
+                                                </div>
+                                                
+                                            </form>
+                                            <!-- End Form -->
+                                            
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Column -->
+                              
+                                
+                            </div>
+                        </div>
+                        <!-- End Row -->
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End Section -->
+            
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $("form[name='appointment']").validate({
+      // Specify validation rules
+      rules: {
+        // The key name on the left side is the name attribute
+        // of an input field. Validation rules are defined
+        // on the right side
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          // Specify that email should be validated
+          // by the built-in "email" rule
+          email: true
+        },
+        location: "required",
+        health_card_number: "required",
+        ap_datetime: "required",
+      },
+      // Specify validation error messages
+      messages: {
+        name: "Please enter your name",
+        phone: "Please enter your phone number",
+        email: "Please enter a valid email address",
+        location: "Please select a clinic location",
+        health_card_number: "Please enter your health card number",
+        ap_datetime: "Please select your preferred appointment date and time"
+      },
+      // Make sure the form is submitted to the destination defined
+      // in the "action" attribute of the form when valid
+      submitHandler: function(form) {
+        form.submit();
+      }
+    });
+
+
+    $('#ap_datetime').datetimepicker({
+      format:'Y-m-d H:i'
+    });
+
+     $('#travel_date').datetimepicker({
+      timepicker:false,
+      format:'Y-m-d'
+    });
+
+
+    
+  });
+        
+</script>
+
+
+

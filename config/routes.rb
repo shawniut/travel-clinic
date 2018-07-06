@@ -1,10 +1,18 @@
 Rails.application.routes.draw do
+  get 'appointments/index'
+
   get 'pages/index'
 
   root :to => 'pages#index'
 
   resources :pages do
+    get 'about_us', on: :collection
+    get 'faq', on: :collection
+  end
 
+  resources :appointments do
+    get 'thanks', on: :collection
+    get 'all', on: :collection
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

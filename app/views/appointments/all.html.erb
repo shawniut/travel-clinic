@@ -1,0 +1,40 @@
+<!-- Page Title -->
+
+<div class="content_section page_title default">
+    <div class="content clearfix">
+        <h1>All Appointment Requests</h1>
+    </div>
+</div>
+
+<div class="content_section">
+  <div class="full_content clearfix">
+      
+      <!-- Section -->
+      <div class="it_section content_section hide_text_shadow">
+          <div class="hm_no_overlay row_spacer4">
+              <span class="bg_overlay_con"></span>
+              <div class="section_content container">
+                  
+                  <%@appointments.each_with_index do |ap,index|%>
+                    <h4>Appointment <%=index+1%>,  received  <%=ap.created_at.strftime("at %I:%M%p %Y-%d-%m")%></h4>
+                    <b>Name:</b>  <%=ap.name%> <br>
+                    <b>Pone:</b>  <%=ap.phone%><br>
+                    <b>Email:</b>  <%=ap.email%><br>
+                    <b>Clinic Location:</b>  <%=ap.location%><br>
+                    <b>Destination(s):</b>  <%=ap.destination%><br>
+                    <b>Health Card Number:</b>  <%=ap.health_card_number%><br>
+                    <b>Additional Health Card Number::</b>  <%=ap.additional_health_card_number%><br>
+                    <b>Travel Date:</b>  <%=ap.travel_date.strftime("%Y/%d/%m")%><br>
+                    <b>Requested Appointment Date and Time:</b>  <%=ap.ap_datetime.strftime("%Y-%d-%m at %I:%M%p")%><br>
+                    <b>Message:</b>  <%=ap.message%><br>
+                    <hr>
+                  <%end%>
+              
+              </div>
+          </div>
+      </div>
+      <!-- End Section -->
+      
+  </div>
+</div>
+<!-- End Page Title -->

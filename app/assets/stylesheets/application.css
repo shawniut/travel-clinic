@@ -12,5 +12,6 @@
  *
  *= require_tree .
  *= require icon-fonts
+ *= require bootstrap-datetimepicker.min
  *= require_self
  */

@@ -13,16 +13,23 @@
 //= require jquery
 //= require jquery-1.12.4.min.js
 //= require jquery_ujs
+//= require jquery.validate
 //= require jquery-migrate-1.4.1.min.js
 //= require plugins.min.js
+
+//= require bootstrap-datetimepicker.min.js
+
 //= require modernizr-3.2.0.base.js
 
 //= require turbolinks
-//= require functions
+
+
 
 //= require jquery.themepunch.tools.min.js
 //= require jquery.themepunch.revolution.min.js
 //= require_tree ./extensions
+
+//= require functions
 
 
 
