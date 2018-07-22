@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :pages do
     get 'about_us', on: :collection
+    get 'contact_us', on: :collection
     get 'faq', on: :collection
   end
 
