@@ -27,6 +27,7 @@ class AppointmentsController < ApplicationController
     ap.message = params[:message]
 
     if ap.save
+      AppointmentsMailer.new_appointment(ap.id).deliver
       render action: :thanks
     else
       render action: :error

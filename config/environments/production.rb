@@ -68,6 +68,16 @@ Rails.application.configure do
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
 
+  config.action_mailer.smtp_settings = {
+    user_name: 'SMTP_Injection',
+    password: '062c727b3620936fc532bec380bac9f594c3ff32',
+    address: 'smtp.sparkpostmail.com',
+    port: 587,
+    enable_starttls_auto: true,
+    format: :html,
+    from: 'Douglasglen.Pharmacy@gmail.com'
+  }
+
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 

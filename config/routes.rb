@@ -5,6 +5,10 @@ Rails.application.routes.draw do
 
   root :to => 'pages#index'
 
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
+
   resources :pages do
     get 'about_us', on: :collection
     get 'contact_us', on: :collection
