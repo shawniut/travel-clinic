@@ -75,7 +75,7 @@ Rails.application.configure do
     port: 587,
     enable_starttls_auto: true,
     format: :html,
-    from: 'Douglasglen.Pharmacy@gmail.com'
+    from: 'info@travelcliniccalgary.ca'
   }
 
   # Send deprecation notices to registered listeners.

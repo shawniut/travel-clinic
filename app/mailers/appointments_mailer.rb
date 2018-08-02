@@ -1,6 +1,6 @@
 class AppointmentsMailer < ApplicationMailer
 
-    default from: "\"Travel Clinic Calgary\" <Douglasglen.Pharmacy@gmail.com>"
+    default from: "\"Travel Clinic Calgary\" <info@travelcliniccalgary.ca>"
 
     require 'mail'
 
