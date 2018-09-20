@@ -15,7 +15,7 @@
               <span class="bg_overlay_con"></span>
               <div class="section_content container">
                   
-                  <%@appointments.each_with_index do |ap,index|%>
+                  <%@appointments.reverse.each_with_index do |ap,index|%>
                     <h4>Appointment <%=index+1%>,  received  <%=ap.created_at.strftime("at %I:%M%p %Y-%d-%m") if ap.created_at != nil%></h4>
                     <b>Name:</b>  <%=ap.name%> <br>
                     <b>Pone:</b>  <%=ap.phone%><br>
