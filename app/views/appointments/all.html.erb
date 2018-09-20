@@ -16,7 +16,7 @@
               <div class="section_content container">
                   
                   <%@appointments.reverse.each_with_index do |ap,index|%>
-                    <h4>Appointment <%=index+1%>,  received  <%=ap.created_at.strftime("at %I:%M%p %Y-%d-%m") if ap.created_at != nil%></h4>
+                    <h4>Appointment received  <%=ap.created_at.strftime("at %I:%M%p %Y-%d-%m") if ap.created_at != nil%></h4>
                     <b>Name:</b>  <%=ap.name%> <br>
                     <b>Pone:</b>  <%=ap.phone%><br>
                     <b>Email:</b>  <%=ap.email%><br>
