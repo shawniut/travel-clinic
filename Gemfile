@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'newrelic_rpm'
 # Preview email in the browser instead of sending it.
 gem 'letter_opener'
 gem 'letter_opener_web', '~> 1.0'

@@ -83,6 +83,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
+    newrelic_rpm (3.17.1.326)
     nokogiri (1.8.3)
       mini_portile2 (~> 2.3.0)
     pg (0.19.0)
@@ -168,6 +169,7 @@ DEPENDENCIES
   jquery-rails
   letter_opener
   letter_opener_web (~> 1.0)
+  newrelic_rpm
   pg
   rails (= 4.2.10)
   sass-rails (~> 5.0)
