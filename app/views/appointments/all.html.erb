@@ -16,7 +16,7 @@
               <div class="section_content container">
                   
                   <%@appointments.each_with_index do |ap,index|%>
-                    <h4>Appointment <%=index+1%>,  received  <%=ap.created_at.strftime("at %I:%M%p %Y-%d-%m")%></h4>
+                    <h4>Appointment <%=index+1%>,  received  <%=ap.created_at.strftime("at %I:%M%p %Y-%d-%m") if ap.created_at != nil%></h4>
                     <b>Name:</b>  <%=ap.name%> <br>
                     <b>Pone:</b>  <%=ap.phone%><br>
                     <b>Email:</b>  <%=ap.email%><br>
@@ -24,8 +24,8 @@
                     <b>Destination(s):</b>  <%=ap.destination%><br>
                     <b>Health Card Number:</b>  <%=ap.health_card_number%><br>
                     <b>Additional Health Card Number::</b>  <%=ap.additional_health_card_number%><br>
-                    <b>Travel Date:</b>  <%=ap.travel_date.strftime("%Y/%d/%m")%><br>
-                    <b>Requested Appointment Date and Time:</b>  <%=ap.ap_datetime.strftime("%Y-%d-%m at %I:%M%p")%><br>
+                    <b>Travel Date:</b>  <%=ap.travel_date.strftime("%Y/%d/%m") if ap.travel_date != nil%><br>
+                    <b>Requested Appointment Date and Time:</b>  <%=ap.ap_datetime.strftime("%Y-%d-%m at %I:%M%p") if ap.ap_datetime != nil%><br>
                     <b>Message:</b>  <%=ap.message%><br>
                     <hr>
                   <%end%>
