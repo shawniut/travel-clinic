@@ -68,14 +68,23 @@ Rails.application.configure do
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
 
+  # config.action_mailer.smtp_settings = {
+  #   user_name: 'SMTP_Injection',
+  #   password: '062c727b3620936fc532bec380bac9f594c3ff32',
+  #   address: 'smtp.sparkpostmail.com',
+  #   port: 587,
+  #   enable_starttls_auto: true,
+  #   format: :html,
+  #   from: 'info@travelcliniccalgary.ca'
+  # }
+
   config.action_mailer.smtp_settings = {
-    user_name: 'SMTP_Injection',
-    password: '062c727b3620936fc532bec380bac9f594c3ff32',
-    address: 'smtp.sparkpostmail.com',
+    user_name: 'postmaster@sandboxb54ccd9150af419c868f431279e7bd57.mailgun.org',
+    password: '3ca7780167ccfc77dbf271a4d696a930-a3d67641-c1aea7ac',
+    address: 'smtp.mailgun.org',
     port: 587,
-    enable_starttls_auto: true,
-    format: :html,
-    from: 'info@travelcliniccalgary.ca'
+    authentication: :plain,
+    domain: 'travelcliniccalgary.ca'
   }
 
   # Send deprecation notices to registered listeners.
